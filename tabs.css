@@ -1,0 +1,121 @@
+/* General Container */
+.segment-section-tabs-container {
+    display: flex;
+    font-family: Arial, sans-serif;
+    gap: 45px;
+}
+
+/* Tab List (Left Section) */
+.segment-section-tabs-list {
+    width: 30%;
+    background-color: #fff;
+    color: #000;
+    padding: 20px;
+}
+
+/* Style for Left Section h3 */
+.segment-section-tabs-list h3 {
+    font-size: 16px;
+    color: #000000;
+    margin: 10px 0;
+}
+
+/* Tab List Items */
+.segment-section-tab-item {
+    margin-bottom: 20px;
+    cursor: pointer;
+    opacity: 0.7;
+    transition: opacity 0.3s;
+}
+
+.segment-section-tab-item.active {
+    background-color: #f1cb35;  
+    color: #000; 
+    font-weight: bold;
+    padding: 5px;
+}
+
+/* Hover Effect on Tab */
+.segment-section-tab-item:hover {
+    background-color: #f1cb35;  
+    color: #000;  
+}
+
+/* Tab Content (Right Section) */
+.segment-section-tab-content {
+    width: 70%;
+    padding: 20px;
+    position: relative;
+}
+
+/* Style for Right Section h3 */
+.segment-section-tab-content h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    margin-top: 15px; 
+}
+
+/* Style for Right Section p (Description below h3) */
+.segment-section-tab-content p {
+    font-size: 16px;
+    color: #666;  
+    margin-bottom: 20px;
+}
+
+/* Navigation Arrows */
+.segment-section-navigation-arrows {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.segment-section-arrow {
+    background-color: transparent;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    color: #000;
+    font-size: 18px;
+    margin: 5px;
+    cursor: pointer;
+}
+
+/* Content Items */
+.segment-section-content-item {
+    display: none;
+}
+
+.segment-section-content-item.active {
+    display: block;
+}
+
+/* Media Query for Mobile */
+@media (max-width: 768px) {
+    .segment-section-tabs-container {
+        flex-direction: column;  
+    }
+
+    .segment-section-tabs-list {
+        width: 100%;  
+        margin-bottom: 20px;  
+    }
+
+    .segment-section-tab-content {
+        width: 100%;  
+    }
+
+    .segment-section-tabs-list h3 {
+        font-size: 14px;  
+    }
+
+    .segment-section-tab-content h3 {
+        font-size: 16px;  
+    }
+
+    .segment-section-tab-content p {
+        font-size: 14px;  
+    }
+}
