@@ -1,7 +1,7 @@
 .segment-section-tabs-container {
     display: flex;
     font-family: lato, sans-serif;
-    gap: 15%;
+    gap: 10%;
 }
 
 .segment-section-tabs-list {
@@ -57,7 +57,7 @@
 }
 
 .segment-section-content-item img {
-    width: 250px;
+    width: 350px;
     height: auto;
     max-width: 100%;
     border-radius: 5px;
