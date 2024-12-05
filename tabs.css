@@ -1,13 +1,13 @@
 /* General Container */
 .segment-section-tabs-container {
     display: flex;
-    font-family: Arial, sans-serif;
+    font-family: lato, sans-serif;
     gap: 45px;
 }
 
 /* Tab List (Left Section) */
 .segment-section-tabs-list {
-    width: 30%;
+    width: 45%;
     background-color: #fff;
     color: #000;
     padding: 20px;
@@ -43,7 +43,7 @@
 
 /* Tab Content (Right Section) */
 .segment-section-tab-content {
-    width: 70%;
+    width: 45%;
     padding: 20px;
     position: relative;
 }
