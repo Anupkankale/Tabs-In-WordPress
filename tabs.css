@@ -1,28 +1,25 @@
-/* General Container */
 .segment-section-tabs-container {
     display: flex;
     font-family: lato, sans-serif;
-    gap: 45px;
+    gap: 15%;
 }
 
-/* Tab List (Left Section) */
 .segment-section-tabs-list {
-    width: 45%;
+    width: 30%;
     background-color: #fff;
     color: #000;
     padding: 20px;
+    padding-left: 10%;
 }
 
-/* Style for Left Section h3 */
 .segment-section-tabs-list h3 {
     font-size: 16px;
     color: #000000;
     margin: 10px 0;
 }
 
-/* Tab List Items */
 .segment-section-tab-item {
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     cursor: pointer;
     opacity: 0.7;
     transition: opacity 0.3s;
@@ -35,34 +32,39 @@
     padding: 5px;
 }
 
-/* Hover Effect on Tab */
 .segment-section-tab-item:hover {
     background-color: #f1cb35;  
     color: #000;  
 }
 
-/* Tab Content (Right Section) */
 .segment-section-tab-content {
-    width: 45%;
+    width: 35%;
     padding: 20px;
     position: relative;
+    padding-right: 10%;
 }
 
-/* Style for Right Section h3 */
 .segment-section-tab-content h3 {
     font-size: 18px;
     margin-bottom: 10px;
     margin-top: 15px; 
 }
 
-/* Style for Right Section p (Description below h3) */
 .segment-section-tab-content p {
     font-size: 16px;
     color: #666;  
     margin-bottom: 20px;
 }
 
-/* Navigation Arrows */
+.segment-section-content-item img {
+    width: 250px;
+    height: auto;
+    max-width: 100%;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    object-fit: cover;
+}
+
 .segment-section-navigation-arrows {
     display: flex;
     justify-content: flex-end;
@@ -83,7 +85,6 @@
     cursor: pointer;
 }
 
-/* Content Items */
 .segment-section-content-item {
     display: none;
 }
@@ -92,10 +93,14 @@
     display: block;
 }
 
-/* Media Query for Mobile */
+.segment-section-content-item p {
+    width: 340px;  
+}
+
 @media (max-width: 768px) {
     .segment-section-tabs-container {
         flex-direction: column;  
+        gap: 20px;
     }
 
     .segment-section-tabs-list {
@@ -117,5 +122,9 @@
 
     .segment-section-tab-content p {
         font-size: 14px;  
+    }
+
+    .segment-section-content-item img {
+        border-radius: 0;
     }
 }
