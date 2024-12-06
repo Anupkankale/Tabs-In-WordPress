@@ -18,6 +18,7 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
+    // Click functionality for next and previous buttons
     document.getElementById('segment-section-next-tab').addEventListener('click', () => {
         currentTab = currentTab < totalTabs ? currentTab + 1 : 1;
         updateSegmentTabs(currentTab);
@@ -28,8 +29,9 @@ document.addEventListener('DOMContentLoaded', () => {
         updateSegmentTabs(currentTab);
     });
 
+    // Hover effect to change content
     document.querySelectorAll('.segment-section-tab-item').forEach((tab) => {
-        tab.addEventListener('click', () => {
+        tab.addEventListener('mouseenter', () => {
             currentTab = parseInt(tab.dataset.tab);
             updateSegmentTabs(currentTab);
         });
