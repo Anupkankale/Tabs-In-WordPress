@@ -1,66 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tabs in WordPress</title>
-    <link rel="stylesheet" href="tabs.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Two-Section Layout</title>
+  <link rel="stylesheet" href="tabs.css">
 </head>
-
 <body>
-    <div class="tabs-wrapper">
-        <div class="segment-section-tabs-container">
-            <!-- Left Section: Tab List -->
-            <div class="segment-section-tabs-list">
-                <div class="segment-section-tab-item active" data-tab="1">
-                    <h3><span> 1</span> Apparel, luxury & accessories Grocery</h3>
-                    <p> Empowering Business Transformation with Expert Technology Strategy</p>
-                </div>
-                <div class="segment-section-tab-item" data-tab="2">
-                    <h3><span> 1</span>Grocery & hypermarkets</h3>
-                    <p> Empowering Business Transformation with Expert Technology Strategy</p>
-                </div>
-                <div class="segment-section-tab-item" data-tab="3">
-                    <h3><span> 1</span>Consumer electronics</h3>
-                    <p> Empowering Business Transformation with Expert Technology Strategy</p>
-                </div>
-                
-            </div>
-
-            <!-- Right Section: Tab Content -->
-            <div class="segment-section-tab-content">
-                <!-- Navigation Arrows -->
-                <div class="segment-section-navigation-arrows">
-                    <button id="segment-section-prev-tab" class="segment-section-arrow">&lt;</button>
-                    <button id="segment-section-next-tab" class="segment-section-arrow">&gt;</button>
-                </div>
-
-                <!-- Tab Content -->
-                <div class="segment-section-content-item active" data-tab="1">
-                    <img src="https://via.placeholder.com/350x380" alt="Apparel, luxury & accessories Grocery">
-                    <h3>Apparel, luxury & accessories Grocery</h3>
-                    <p>Focused on providing customers with premium apparel, luxury items, and accessories tailored for a sophisticated lifestyle.</p>
-                </div>
-
-                <div class="segment-section-content-item" data-tab="2">
-                    <img src="https://via.placeholder.com/350x380" alt="Grocery & hypermarkets">
-                    <h3>Grocery & hypermarkets</h3>
-                    <p>Offering a variety of grocery products and essentials for everyday needs, including fresh produce, meats, and more.</p>
-                </div>
-
-                <div class="segment-section-content-item" data-tab="3">
-                    <img src="https://via.placeholder.com/350x380" alt="Consumer electronics">
-                    <h3>Consumer electronics</h3>
-                    <p>Technology-driven solutions for consumers, including the latest gadgets, home electronics, and wearable devices.</p>
-                </div>
-
-                 
-            </div>
-        </div>
+  <div class="container">
+    <!-- Left Section -->
+    <div class="text-section">
+      <h2>Driving Retail Innovation for a Global Brand</h2>
+      <p><span>Challenge:</span> Disconnected customer experiences and manual supply chain processes.</p>
+      <p><span>Solution:</span> Deployed a fully integrated omnichannel solution using SAP Commerce and Blue Yonder.</p>
+      <p><span>Result:</span> Achieved 40% faster inventory turns and a 30% increase in customer satisfaction scores.</p>
     </div>
 
-    <script src="tabs.js"></script>
-</body>
+    <!-- Right Section -->
+    <div class="carousel-container">
+      <div class="carousel-images">
+        <img src="image1.jpg" alt="Image 1">
+        <img src="image2.jpg" alt="Image 2">
+        <img src="image3.jpg" alt="Image 3">
+      </div>
+      <button class="btn btn-prev" onclick="moveSlide(-1)">❮</button>
+      <button class="btn btn-next" onclick="moveSlide(1)">❯</button>
+    </div>
+  </div>
 
+  <script src="tabs.js"></script>
+</body>
 </html>

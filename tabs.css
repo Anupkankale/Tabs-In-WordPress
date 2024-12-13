@@ -1,161 +1,102 @@
-.tabs-wrapper {
-    background-color: #000;  
-    padding: 20px;
-    border-radius: 5px;
-    width: 100%;  
-    margin: 0 auto;  
-}
-
-/* Container for tabs and content */
-.segment-section-tabs-container {
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
     display: flex;
-    font-family: Lato, sans-serif;
-    gap: 10%;
-    width: 100%; /* Ensures the container stretches to fill the wrapper */
-}
-
-/* Tab List */
-.segment-section-tabs-list {
-    width: 30%;
-    color: #616160; /* Default font color */
-    padding: 20px;
-    padding-left: 10%;
-}
-
-.segment-section-tabs-list h3 {
-    font-size: 25px;
-    color: #ffffff; /* Default color for <h3> */
-    margin: 10px 0;
-}
-
-/* Tab Item Styling */
-.segment-section-tab-item {
-    margin-bottom: 10px;
-    cursor: pointer;
-    opacity: 0.7;
-    transition: opacity 0.3s, color 0.3s; /* Transition for text color and opacity */
-    font-size: 20px;
-}
-
-/* Active Tab Style */
-.segment-section-tab-item.active {
-    color: #f1cb35; /* Matches hover color */
-    font-weight: bold;
-    padding: 5px;
-}
-
-/* Change color of h3 when hovering over the tab item */
-.segment-section-tab-item:hover h3 {
-    color: #f1cb35; /* Hover color for <h3> */
-}
-
-/* Square Bullet for Active Tab */
-.segment-section-tab-item.active h3::before {
-    content: "▶  "; /* Square bullet point */
-    font-size: 20px;
-    color: #f1cb35; /* Matches hover color */
-}
-
-/* Content Section */
-.segment-section-tab-content {
-    width: 35%;
-    padding: 20px;
-    position: relative;
-    padding-right: 10%;
-}
-
-.segment-section-tab-content h3 {
-    color: #fff; /* Default color for content heading */
-    font-size: 20px;
-    margin-bottom: 10px;
-}
-
-.segment-section-tab-content p {
-    font-size: 16px;
-    color: #666; /* Default text color for content */
-    margin-bottom: 20px;
-}
-
-/* Tab Content Item */
-.segment-section-content-item img {
-    width: 350px;
-    height:  380px;
-    max-width: 100%;
-    border-radius: 5px;
-    margin-bottom: 15px;
-    object-fit: cover;
-}
-
-/* Navigation Arrows */
-.segment-section-navigation-arrows {
-    display: flex;
-    justify-content: flex-end;
+    justify-content: center;
     align-items: center;
-    padding: 10px;
-}
-
-.segment-section-arrow {
-    background-color: transparent;
-    border: 1px solid #fff;
-    border-radius: 50%;
-    width: 30px;
-    height: 30px;
-    color: #fff;
-    font-size: 18px;
-    margin: 5px;
-    cursor: pointer;
-}
-
-/* Active Tab Style */
-.segment-section-tab-item.active h3 {
-    color: #f1cb35; /* Pink color for the active tab text */
+    min-height: 100vh;
+    background-color: #f0f0f0;
+  }
+  
+  .container {
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+    max-width: 1200px;
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Left Section (Text) */
+  .text-section {
+    flex: 1;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  .text-section h2 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  .text-section p {
+    margin-bottom: 15px;
+    color: #666;
+    line-height: 1.6;
+  }
+  
+  .text-section p span {
     font-weight: bold;
-    padding: 5px;
-}
-
-/* Hide non-active content */
-.segment-section-content-item {
-    display: none;
-}
-
-.segment-section-content-item.active {
-    display: block;
-}
-
-/* Responsive Styles */
-@media (max-width: 768px) {
-    .tabs-wrapper {
-        width: 100%; /* Adjust wrapper to full width for smaller screens */
-        padding: 10px;
+    color: #000;
+  }
+  
+  /* Right Section (Carousel) */
+  .carousel-container {
+    flex: 1;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .carousel-images {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+  }
+  
+  .carousel-images img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .btn {
+    position: absolute;
+    top: 50%;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    transform: translateY(-50%);
+    z-index: 10;
+  }
+  
+  .btn-prev {
+    left: 10px;
+  }
+  
+  .btn-next {
+    right: 10px;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .container {
+      flex-direction: column;
     }
-
-    .segment-section-tabs-container {
-        flex-direction: column;
-        gap: 20px;
+  
+    .text-section, .carousel-container {
+      flex: unset;
+      width: 100%;
     }
-
-    .segment-section-tabs-list {
-        width: 100%;
-        margin-bottom: 20px;
-    }
-
-    .segment-section-tab-content {
-        width: 100%;
-    }
-
-    .segment-section-tabs-list h3 {
-        font-size: 14px;
-    }
-
-    .segment-section-tab-content h3 {
-        font-size: 16px;
-    }
-
-    .segment-section-tab-content p {
-        font-size: 14px;
-    }
-
-    .segment-section-content-item img {
-        border-radius: 0;
-    }
-}
+  }
+  

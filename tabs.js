@@ -1,39 +1,14 @@
-document.addEventListener('DOMContentLoaded', () => {
-    let currentTab = 1;
-    const totalTabs = document.querySelectorAll('.segment-section-tab-item').length;
+let currentSlide = 0;
+const images = document.querySelectorAll('.carousel-images img');
+const totalSlides = images.length;
 
-    function updateSegmentTabs(newTab) {
-        document.querySelectorAll('.segment-section-tab-item').forEach((tab) => {
-            tab.classList.remove('active');
-            if (parseInt(tab.dataset.tab) === newTab) {
-                tab.classList.add('active');
-            }
-        });
-
-        document.querySelectorAll('.segment-section-content-item').forEach((content) => {
-            content.classList.remove('active');
-            if (parseInt(content.dataset.tab) === newTab) {
-                content.classList.add('active');
-            }
-        });
-    }
-
-    // Click functionality for next and previous buttons
-    document.getElementById('segment-section-next-tab').addEventListener('click', () => {
-        currentTab = currentTab < totalTabs ? currentTab + 1 : 1;
-        updateSegmentTabs(currentTab);
-    });
-
-    document.getElementById('segment-section-prev-tab').addEventListener('click', () => {
-        currentTab = currentTab > 1 ? currentTab - 1 : totalTabs;
-        updateSegmentTabs(currentTab);
-    });
-
-    // Hover effect to change content
-    document.querySelectorAll('.segment-section-tab-item').forEach((tab) => {
-        tab.addEventListener('mouseenter', () => {
-            currentTab = parseInt(tab.dataset.tab);
-            updateSegmentTabs(currentTab);
-        });
-    });
-});
+function moveSlide(direction) {
+  currentSlide += direction;
+  if (currentSlide < 0) {
+    currentSlide = totalSlides - 1;
+  } else if (currentSlide >= totalSlides) {
+    currentSlide = 0;
+  }
+  const offset = -currentSlide * 100; // 100% width slide
+  document.querySelector('.carousel-images').style.transform = `translateX(${offset}%)`;
+}

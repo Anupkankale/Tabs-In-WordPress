@@ -7,7 +7,7 @@ function custom_tab_navigation_shortcode() {
             <!-- Left Section: Tab List -->
             <div class="segment-section-tabs-list">
                 <div class="segment-section-tab-item active" data-tab="1">
-                    <h3>  Apparel, luxury & accessories Grocery</h3>
+                    <h3>  Apparel, luxury & accessories</h3>
                 </div>
                 <div class="segment-section-tab-item" data-tab="2">
                     <h3>Grocery & hypermarkets</h3>
@@ -57,79 +57,79 @@ function custom_tab_navigation_shortcode() {
 
                 <!-- Tab Content -->
                 <div class="segment-section-content-item active" data-tab="1">
-                    <img src="https://via.placeholder.com/350x380" alt="Apparel, luxury & accessories Grocery">
+                    <img src="https://yallo.group/wp-content/uploads/2024/12/retseg1b.jpg" alt="Apparel, luxury & accessories Grocery">
                     <h3>Apparel, luxury & accessories Grocery</h3>
                     <p>Focused on providing customers with premium apparel, luxury items, and accessories tailored for a sophisticated lifestyle.</p>
                 </div>
 
                 <div class="segment-section-content-item" data-tab="2">
-                    <img src="https://via.placeholder.com/350x380" alt="Grocery & hypermarkets">
+                    <img src="https://yallo.group/wp-content/uploads/2024/12/retseg2a.jpg" alt="Grocery & hypermarkets">
                     <h3>Grocery & hypermarkets</h3>
                     <p>Offering a variety of grocery products and essentials for everyday needs, including fresh produce, meats, and more.</p>
                 </div>
 
                 <div class="segment-section-content-item" data-tab="3">
-                    <img src="https://via.placeholder.com/350x380" alt="Consumer electronics">
+                    <img src="https://yallo.group/wp-content/uploads/2024/12/retseg3a.jpg" alt="Consumer electronics">
                     <h3>Consumer electronics</h3>
                     <p>Technology-driven solutions for consumers, including the latest gadgets, home electronics, and wearable devices.</p>
                 </div>
 
                 <div class="segment-section-content-item" data-tab="4">
-                    <img src="https://via.placeholder.com/350x380" alt="Drugstore, health & beauty">
+                    <img src="https://yallo.group/wp-content/uploads/2024/12/retseg4a.jpg" alt="Drugstore, health & beauty">
                     <h3>Drugstore, health & beauty</h3>
                     <p>Providing health-related products and beauty items, from skincare to over-the-counter medications and wellness goods.</p>
                 </div>
 
                 <div class="segment-section-content-item" data-tab="5">
-                    <img src="https://via.placeholder.com/350x380" alt="Mass merchandise & department stores">
+                    <img src="https://yallo.group/wp-content/uploads/2024/12/retseg5a.jpg" alt="Mass merchandise & department stores">
                     <h3>Mass merchandise & department stores</h3>
                     <p>Offering a wide range of everyday items, including clothing, household products, and seasonal essentials at great prices.</p>
                 </div>
 
                 <div class="segment-section-content-item" data-tab="6">
-                    <img src="https://via.placeholder.com/350x380" alt="Home improvement & furnishings">
+                    <img src="https://yallo.group/wp-content/uploads/2024/12/retseg6a.jpg" alt="Home improvement & furnishings">
                     <h3>Home improvement & furnishings</h3>
                     <p>Providing tools, materials, and furniture to improve your living space, from DIY projects to full renovations.</p>
                 </div>
 
                 <div class="segment-section-content-item" data-tab="7">
-                    <img src="https://via.placeholder.com/350x380" alt="Restaurants, Food & Beverage chains">
+                    <img src="https://yallo.group/wp-content/uploads/2024/12/retseg7a.jpg" alt="Restaurants, Food & Beverage chains">
                     <h3>Restaurants, Food & Beverage chains</h3>
                     <p>Offering a wide variety of dining options from popular restaurants and beverage chains across different cuisines.</p>
                 </div>
 
                 <div class="segment-section-content-item" data-tab="8">
-                    <img src="https://via.placeholder.com/350x380" alt="Airline retail & duty-free">
+                    <img src="https://yallo.group/wp-content/uploads/2024/12/retseg8a.jpg" alt="Airline retail & duty-free">
                     <h3>Airline retail & duty-free</h3>
                     <p>Providing a selection of duty-free products and unique travel items for passengers across various international airports.</p>
                 </div>
 
                 <div class="segment-section-content-item" data-tab="9">
-                    <img src="https://via.placeholder.com/350x380" alt="Convenience & fuel">
+                    <img src="https://yallo.group/wp-content/uploads/2024/12/retseg9a.jpg" alt="Convenience & fuel">
                     <h3>Convenience & fuel</h3>
                     <p>Offering essential convenience store products and fuel services for drivers and customers on the go.</p>
                 </div>
 
                 <div class="segment-section-content-item" data-tab="10">
-                    <img src="https://via.placeholder.com/350x380" alt="Off-price/discounts">
+                    <img src="https://yallo.group/wp-content/uploads/2024/12/retseg10a.jpg" alt="Off-price/discounts">
                     <h3>Off-price/discounts</h3>
                     <p>Providing discounted products on a variety of items, from clothing to home goods and everything in between.</p>
                 </div>
 
                 <div class="segment-section-content-item" data-tab="11">
-                    <img src="https://via.placeholder.com/350x380" alt="Hotels & resorts">
+                    <img src="https://yallo.group/wp-content/uploads/2024/12/retseg11a.jpg" alt="Hotels & resorts">
                     <h3>Hotels & resorts</h3>
                     <p>Offering luxurious stays at top hotels and resorts, from beach resorts to city escapes, all at unbeatable prices.</p>
                 </div>
 
                 <div class="segment-section-content-item" data-tab="12">
-                    <img src="https://via.placeholder.com/350x380" alt="FMCG">
+                    <img src="https://yallo.group/wp-content/uploads/2024/12/retseg12a.jpg" alt="FMCG">
                     <h3>FMCG</h3>
                     <p>Fast-Moving Consumer Goods that are in constant demand, including products in the food, beverage, and personal care sectors.</p>
                 </div>
 
                 <div class="segment-section-content-item" data-tab="13">
-                    <img src="https://via.placeholder.com/350x380" alt="Specialty retail">
+                    <img src="https://yallo.group/wp-content/uploads/2024/12/retseg13a.jpg" alt="Specialty retail">
                     <h3>Specialty retail</h3>
                     <p>Specialized stores offering a range of unique products, including niche clothing brands, collectibles, and more.</p>
                 </div>
@@ -154,7 +154,7 @@ function custom_tab_navigation_shortcode() {
 }
 
 .segment-section-tabs-list {
-    width: 30%;
+   /* width: 30%; */
     color: #616160;
     padding: 20px;
     padding-left: 10%;
